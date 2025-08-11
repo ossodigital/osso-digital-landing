@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Básico -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Osso Digital</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Osso Digital — Mockups, IA, bots e integrações</title>
+  <meta name="description" content="Transformamos ideias em produtos digitais — mockups, IA, bots e muito mais." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ossodigital.com.br/" />
+
+  <!-- Favicon / Ícones (garanta que o arquivo existe nesse caminho) -->
+  <link rel="icon" href="/images/osso.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/osso.png" />
+  <meta name="theme-color" content="#ff6a00" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Osso Digital" />
+  <meta property="og:description" content="Mockups, IA, bots e integrações." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ossodigital.com.br/" />
+  <meta property="og:image" content="https://www.ossodigital.com.br/images/osso.png" />
+  <meta property="og:site_name" content="Osso Digital" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Osso Digital" />
+  <meta name="twitter:description" content="Mockups, IA, bots e integrações." />
+  <meta name="twitter:image" content="https://www.ossodigital.com.br/images/osso.png" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Logo Osso Digital" />
-    <nav>
+    <a href="#inicio" class="brand" aria-label="Osso Digital">
+      <img src="images/logo.png" alt="Logo Osso Digital" />
+      <span class="brand-name">Osso Digital</span>
+    </a>
+    <nav aria-label="Navegação principal">
       <ul>
         <li><a href="#inicio">Início</a></li>
         <li><a href="#servicos">Serviços</a></li>
@@ -23,7 +55,8 @@
       <h1>Bem-vindo à Osso Digital</h1>
       <p>Transformando ideias em produtos digitais — mockups, IA, bots e muito mais.</p>
       <form action="obrigado.html" method="GET">
-        <input type="email" name="email" placeholder="Seu melhor e-mail" required />
+        <label for="email" class="sr-only">Seu e-mail</label>
+        <input id="email" type="email" name="email" placeholder="Seu melhor e-mail" required />
         <button type="submit">Quero saber mais</button>
       </form>
     </section>
@@ -38,27 +71,37 @@
       </ul>
     </section>
 
-    <section class="testimonials" id="depoimentos">
-      <h2>O que dizem nossos clientes</h2>
+    <section class="testimonials" id="depoimentos" aria-labelledby="titulo-depoimentos">
+      <h2 id="titulo-depoimentos">O que dizem nossos clientes</h2>
       <div class="testimonial-list">
-        <div class="testimonial-item">
+        <article class="testimonial-item">
           <p>"Os mockups da Osso Digital mudaram a cara dos meus produtos! Profissionais e fáceis de usar."</p>
           <span>— Ana C., Designer Gráfico</span>
-        </div>
-        <div class="testimonial-item">
+        </article>
+        <article class="testimonial-item">
           <p>"O bot de atendimento no WhatsApp automatizou tudo. Atendo clientes até dormindo!"</p>
           <span>— Marcos T., Loja Online</span>
-        </div>
-        <div class="testimonial-item">
+        </article>
+        <article class="testimonial-item">
           <p>"Os packs digitais são incríveis! Prontos pra usar e com visual top demais."</p>
           <span>— Juliana R., Criadora de Conteúdo</span>
-        </div>
+        </article>
       </div>
+    </section>
+
+    <!-- Seção de contato para o link do menu não quebrar -->
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <p>Fale com a gente por e-mail: <a href="mailto:contato@ossodigital.com.br">contato@ossodigital.com.br</a></p>
+      <!-- Se quiser um formulário real depois, integro Formspree/Zoho pra você -->
     </section>
   </main>
 
   <footer>
     <p>© 2025 Osso Digital. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- JS (se tiver) -->
+  <script src="main.js" defer></script>
 </body>
 </html>
