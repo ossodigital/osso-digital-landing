@@ -3,49 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Osso Digital — Mockups, IA, bots e integrações</title>
-
-  <!-- SEO básico -->
-  <link rel="canonical" href="https://www.ossodigital.com.br/">
-  <meta name="description" content="Mockups, IA, bots e integrações para acelerar seus produtos digitais.">
-  <meta name="robots" content="index,follow">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Osso Digital">
-  <meta property="og:description" content="Mockups, IA, bots e integrações.">
-  <meta property="og:url" content="https://www.ossodigital.com.br/">
-  <meta property="og:image" content="https://www.ossodigital.com.br/images/osso.png">
-
-  <!-- Ícone -->
-  <link rel="icon" href="/images/osso.png">
-
-  <!-- CSS -->
+  <title>Osso Digital — Início</title>
+  <meta name="description" content="Mockups, IA, bots e integrações. Transformamos ideias em produtos digitais." />
+  <link rel="canonical" href="https://www.ossodigital.com.br/" />
+  <link rel="icon" href="/images/osso.png" type="image/png" />
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <header>
-    <img src="/images/logo.png" alt="Logo Osso Digital" />
-    <nav>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/"><img src="/images/osso.png" alt="Osso Digital" /></a>
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">☰</button>
+      <nav id="navLinks" class="site-nav">
+        <a href="/index.html">Início</a>
+        <a href="/servicos.html">Serviços</a>
+        <a href="/bots.html">Bots</a>
+        <a href="/contato.html">Contato</a>
+      </nav>
+    </div>
   </header>
 
   <main id="inicio">
-    <section class="hero">
+    <section class="hero container">
       <h1>Bem-vindo à Osso Digital</h1>
       <p>Transformando ideias em produtos digitais — mockups, IA, bots e muito mais.</p>
-      <form action="/obrigado.html" method="GET">
-        <input type="email" name="email" placeholder="Seu melhor e-mail" required />
+
+      <!-- formulário simples enviando para obrigado.html (GET) -->
+      <form action="/obrigado.html" method="GET" class="hero-form">
+        <input id="emailHero" type="email" name="email" placeholder="Seu melhor e-mail" required />
         <button type="submit">Quero saber mais</button>
       </form>
+
+      <div class="hero-cta">
+        <a href="https://wa.me/5511939369778" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a href="https://instagram.com/ossodigital" target="_blank" rel="noopener">@ossodigital</a>
+      </div>
     </section>
 
-    <section id="servicos" class="servicos">
+    <section id="servicos" class="servicos container">
       <h2>O que oferecemos</h2>
       <ul>
         <li>🧠 Bots inteligentes para WhatsApp e Instagram</li>
@@ -53,9 +48,10 @@
         <li>🛒 Integração com Etsy e lojas online</li>
         <li>🛠️ Desenvolvimento Web e APIs</li>
       </ul>
+      <p><a href="/servicos.html">Ver detalhes dos serviços →</a></p>
     </section>
 
-    <section class="testimonials" id="depoimentos">
+    <section class="testimonials container" id="depoimentos">
       <h2>O que dizem nossos clientes</h2>
       <div class="testimonial-list">
         <div class="testimonial-item">
@@ -72,23 +68,21 @@
         </div>
       </div>
     </section>
-
-    <section id="contato" class="contato">
-      <h2>Contato</h2>
-      <p>Fale com a gente: <a href="mailto:reinaldo@ossodigital.com.br">reinaldo@ossodigital.com.br</a></p>
-    </section>
   </main>
 
-  <!-- Rodapé (fica no FINAL do body) -->
   <footer class="site-footer">
     <div class="container">
-      <p>© 2025 Osso Digital. Todos os direitos reservados.</p>
+      <p>© <span id="year"></span> Osso Digital. Todos os direitos reservados.</p>
       <nav class="footer-nav">
         <a href="/obrigado.html" title="Página de confirmação">Página de obrigado</a>
         <a href="/sitemap.xml" title="Sitemap do site">Sitemap</a>
         <a href="/robots.txt" title="Robots.txt">Robots</a>
+        <a href="https://instagram.com/ossodigital" target="_blank" rel="noopener">@ossodigital</a>
+        <a href="https://wa.me/5511939369778" target="_blank" rel="noopener">WhatsApp: 11 93936-9778</a>
       </nav>
     </div>
   </footer>
+
+  <script src="/main.js"></script>
 </body>
 </html>

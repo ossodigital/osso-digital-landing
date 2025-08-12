@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Obrigado — Osso Digital</title>
-  <meta name="description" content="Obrigado! Recebemos sua mensagem." />
-  <link rel="canonical" href="https://www.ossodigital.com.br/obrigado.html" />
+  <title>Contato — Osso Digital</title>
+  <meta name="description" content="Fale com a Osso Digital: WhatsApp, Instagram e e-mail." />
+  <link rel="canonical" href="https://www.ossodigital.com.br/contato.html" />
   <link rel="icon" href="/images/osso.png" type="image/png" />
   <link rel="stylesheet" href="/style.css" />
 </head>
@@ -23,10 +23,25 @@
     </div>
   </header>
 
-  <main class="container obrigado">
-    <h1>Obrigado! 🎉</h1>
-    <p>Recebemos seu e-mail. Em breve entraremos em contato.</p>
-    <p><a href="/">Voltar para a página inicial</a></p>
+  <main class="container">
+    <h1>Contato</h1>
+
+    <p>Fale com a gente por e-mail, WhatsApp ou Instagram:</p>
+
+    <ul>
+      <li>📧 <a href="mailto:reinaldo@ossodigital.com.br">reinaldo@ossodigital.com.br</a></li>
+      <li>💬 <a href="https://wa.me/5511939369778" target="_blank" rel="noopener">WhatsApp: 11 93936-9778</a></li>
+      <li>📷 <a href="https://instagram.com/ossodigital" target="_blank" rel="noopener">@ossodigital</a></li>
+    </ul>
+
+    <!-- Form simples que redireciona para obrigado.html -->
+    <h2>Envie uma mensagem</h2>
+    <form action="/obrigado.html" method="GET" class="contact-form">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </main>
 
   <footer class="site-footer">
