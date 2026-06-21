@@ -3,56 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contato — Osso Digital</title>
-  <meta name="description" content="Fale com a Osso Digital: WhatsApp, Instagram e e-mail." />
+
+  <title>Contato | Osso Digital</title>
+
+  <meta name="description" content="Fale com a Osso Digital para solicitar diagnóstico digital, automação, IA para atendimento, SEO local, landing pages e soluções digitais para empresas." />
+  <meta name="robots" content="index, follow" />
+
   <link rel="canonical" href="https://www.ossodigital.com.br/contato.html" />
-  <link rel="icon" href="/images/osso.png" type="image/png" />
+  <link rel="icon" href="/osso.png" type="image/png" />
   <link rel="stylesheet" href="/style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="logo" href="/"><img src="/images/osso.png" alt="Osso Digital" /></a>
+      <a class="logo" href="/" aria-label="Osso Digital - Página inicial">
+        <img src="/osso.png" alt="Osso Digital" />
+      </a>
+
       <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">☰</button>
-      <nav id="navLinks" class="site-nav">
+
+      <nav id="navLinks" class="site-nav" aria-label="Menu principal">
         <a href="/index.html">Início</a>
         <a href="/servicos.html">Serviços</a>
         <a href="/bots.html">Bots</a>
-        <a href="/contato.html">Contato</a>
+        <a href="/contato.html" class="active">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h1>Contato</h1>
+  <main>
+    <section class="hero container">
+      <p class="eyebrow">Contato comercial</p>
 
-    <p>Fale com a gente por e-mail, WhatsApp ou Instagram:</p>
+      <h1>Solicite uma análise inicial da sua empresa</h1>
 
-    <ul>
-      <li>📧 <a href="mailto:reinaldo@ossodigital.com.br">reinaldo@ossodigital.com.br</a></li>
-      <li>💬 <a href="https://wa.me/5511939369778" target="_blank" rel="noopener">WhatsApp: 11 93936-9778</a></li>
-      <li>📷 <a href="https://instagram.com/ossodigital" target="_blank" rel="noopener">@ossodigital</a></li>
-    </ul>
+      <p>
+        Envie os dados do seu negócio para avaliarmos oportunidades de melhoria em atendimento,
+        captação de leads, presença digital, automação e conversão.
+      </p>
 
-    <!-- Form simples que redireciona para obrigado.html -->
-    <h2>Envie uma mensagem</h2>
-    <form action="/obrigado.html" method="GET" class="contact-form">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+      <div class="hero-cta">
+        <a
+          href="https://wa.me/5511989886009?text=Ol%C3%A1%2C%20quero%20solicitar%20uma%20an%C3%A1lise%20inicial%20da%20minha%20empresa."
+          target="_blank"
+          rel="noopener"
+          class="btn-primary"
+        >
+          Falar pelo WhatsApp
+        </a>
+
+        <a
+          href="https://instagram.com/osso_digital"
+          target="_blank"
+          rel="noopener"
+          class="btn-secondary"
+        >
+          Instagram @osso_digital
+        </a>
+      </div>
+    </section>
+
+    <section class="servicos container">
+      <h2>Envie sua solicitação</h2>
+
+      <p>
+        Preencha os dados abaixo para iniciar o contato. Quanto mais contexto você enviar,
+        mais precisa será a análise inicial.
+      </p>
+
+      <form action="/obrigado.html" method="GET" class="contact-form">
+        <input type="text" name="nome" placeholder="Nome completo" required />
+        <input type="text" name="empresa" placeholder="Empresa" />
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input type="tel" name="whatsapp" placeholder="WhatsApp" />
+
+        <select name="interesse" required>
+          <option value="">Área de interesse</option>
+          <option value="diagnostico-digital">Diagnóstico Digital</option>
+          <option value="automacao-whatsapp">Automação WhatsApp</option>
+          <option value="ia-atendimento">IA para Atendimento</option>
+          <option value="seo-local">SEO Local e Google Maps</option>
+          <option value="landing-pages">Landing Pages</option>
+          <option value="integracoes">Integrações e Sistemas</option>
+        </select>
+
+        <textarea
+          name="mensagem"
+          placeholder="Conte rapidamente o que você precisa melhorar no seu negócio"
+          rows="6"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn-primary">Enviar solicitação</button>
+      </form>
+    </section>
+
+    <section class="testimonials container">
+      <h2>Canais oficiais</h2>
+
+      <div class="testimonial-list">
+        <div class="testimonial-item">
+          <h3>WhatsApp</h3>
+          <p>
+            <a href="https://wa.me/5511989886009" target="_blank" rel="noopener">
+              11 98988-6009
+            </a>
+          </p>
+        </div>
+
+        <div class="testimonial-item">
+          <h3>Instagram</h3>
+          <p>
+            <a href="https://instagram.com/osso_digital" target="_blank" rel="noopener">
+              @osso_digital
+            </a>
+          </p>
+        </div>
+
+        <div class="testimonial-item">
+          <h3>E-mail</h3>
+          <p>
+            <a href="mailto:reinaldo@ossodigital.com.br">
+              reinaldo@ossodigital.com.br
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <p>© <span id="year"></span> Osso Digital. Todos os direitos reservados.</p>
-      <nav class="footer-nav">
-        <a href="/obrigado.html">Página de obrigado</a>
+
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="/index.html">Início</a>
+        <a href="/servicos.html">Serviços</a>
+        <a href="/bots.html">Bots</a>
         <a href="/sitemap.xml">Sitemap</a>
         <a href="/robots.txt">Robots</a>
-        <a href="https://instagram.com/ossodigital" target="_blank" rel="noopener">@ossodigital</a>
-        <a href="https://wa.me/5511939369778" target="_blank" rel="noopener">WhatsApp: 11 93936-9778</a>
+        <a href="https://instagram.com/osso_digital" target="_blank" rel="noopener">@osso_digital</a>
+        <a href="https://wa.me/5511989886009" target="_blank" rel="noopener">WhatsApp: 11 98988-6009</a>
       </nav>
     </div>
   </footer>
