@@ -437,6 +437,22 @@ main { flex: 1; }
   animation: raiox-blink 1.6s ease-in-out infinite;
 }
 
+.raiox-chip-muted {
+  color: #d7c98a;
+  background: rgba(255, 200, 87, 0.07);
+  border-color: rgba(255, 200, 87, 0.25);
+}
+
+.raiox-highlight {
+  padding: 36px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 820px) {
+  .raiox-highlight { padding: 26px 22px; }
+}
+
 @keyframes raiox-blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.35; }
